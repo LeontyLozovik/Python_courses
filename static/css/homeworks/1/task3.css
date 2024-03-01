@@ -1,0 +1,18 @@
+table {
+    width: 30%;
+    border-collapse: collapse;
+}
+
+p {
+    margin-bottom: 0
+}
+
+th, td {
+    border: 3px double black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    text-align: center;
+}

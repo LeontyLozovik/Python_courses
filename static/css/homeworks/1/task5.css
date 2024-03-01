@@ -1,0 +1,26 @@
+table {
+    width: 40%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    background-color: #666666
+}
+
+td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.blue {
+    background-color: #8CDBD5
+}
+
+.yellow {
+    background-color: #FFFB8C
+}

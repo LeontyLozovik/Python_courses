@@ -1,0 +1,34 @@
+table {
+    width: 25%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    border-color: #9D352F;
+    background-color: #9D352F
+}
+
+td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+    border-color: #9D352F;
+    background-color: #FFF8DF
+}
+
+.non-border {
+    border-right: none;
+    border-left: none
+}
+
+.no-left {
+    border-left: none
+}
+
+.no-right {
+    border-right: none
+}

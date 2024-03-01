@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="\static\icons\icon.ico" type="image/x-icon">
+    <title>Users</title>
+    <meta name="description" content="Belarus city">
+    <meta name="keyword" content="Belarus, city, ai">
+    <meta name="author" content="Lyavontsiy Lazavik">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    {% if head %}
+        <h1>{{head}}:</h1>
+    {% else %}
+        <h1>Хуй пойми кто</h1>
+    {% endif %}
+
+    {% for user in users %}
+            <p {% if color %} style="color: {{color}}" {% endif %}>{{loop.index}}) {{user}}</p>
+    {% endfor %}
+</body>
+</html>
