@@ -3,49 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <title>Task 1</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homeworks/2/task1.css') }}">
 </head>
 <body>
-    <h1>Форма заявки на работу в зоопарке</h1>
-    <span><i>Пожалуйста, заполните форму. Обязательные поля помечены</i></span>
-    <span style="color: red">*</span>
+    <div class="b-center container">
+        <h1>Форма заявки на работу в зоопарке</h1>
+        <div class="mb5">
+            <span><i>Пожалуйста, заполните форму. Обязательные поля помечены</i></span>
+            <span class="star">*</span>
+        </div>
+    </div>
+
     <form action="" method="post">
-        <label>Имя*
-            <input type="text">
-        </label>
+
+        <div class="b-center container">
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <div class="container-label">
+                    <div class="mb10">
+                        <label for="name">Имя
+                            <span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class="mb10">
+                        <label for="phone">Телефон</label>
+                    </div>
+                    <div class="mb10">
+                        <label for="email">Email
+                            <span class="star">*</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container-input">
+                    <input type="text" id="name" class="mb10">
+                    <input type="tel" id="phone" class="mb10">
+                    <input type="email" id="email" class="mb10">
+                </div>
+            </fieldset>
+        </div>
+
         <br>
-        <label>Телефон
-            <input type="phone">
-        </label>
+
+        <div class="b-center container">
+            <fieldset>
+                <legend>Персональная информация</legend>
+                <div class="container-label">
+                    <div class="mb10">
+                        <label for="age">Возраст
+                            <span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class="mb10">
+                        <label for="sex">Пол</label>
+                    </div>
+                    <div class="mb10">
+                        <label for="text">Перечислите личные качества</label>
+                    </div>
+                </div>
+                <div class="container-input">
+                    <input type="number" id="age" class="mb10">
+                    <br>
+                    <select name="sex" id="sex" class="mb10">
+                        <option value="M">Мужчина</option>
+                        <option value="F">Женщина</option>
+                    </select>
+                    <br>
+                    <textarea rows="3" id="text"></textarea>
+                </div>
+            </fieldset>
+        </div>
+
         <br>
-        <label>Email*
-            <input type="email">
-        </label>
+
+        <div class="b-center container">
+            <fieldset>
+                <legend>Выберете ваших любимых животных</legend>
+                <div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="zebra" id="zebra">
+                        <label for="zebra">Зебра</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="cat" id="cat">
+                        <label for="cat">Кот</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="anaconda" id="anaconda">
+                        <label for="anaconda">Анаконда</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="human" id="human">
+                        <label for="human">Человек</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="elefant" id="elefant">
+                        <label for="elefant">Слон</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="antelope" id="antelope">
+                        <label for="antelope">Антилопа</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="dove" id="dove">
+                        <label for="dove">Голубь</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" value="crab" id="crab">
+                        <label for="crab">Краб</label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
         <br>
-        <label>Возраст*
-            <input type="number">
-        </label>
-        <br>
-        <label>Пол
-            <select name="sex" id="sex">
-                <option value="M">Мужчина</option>
-                <option value="F">Женщина</option>
-            </select>
-        </label>
-        <br>
-        <label>Перечислите личные качества
-            <textarea rows="4" cols="50"></textarea>
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" value="value1">Зебра
-            <input type="checkbox" value="value1">Кот
-            <input type="checkbox" value="value1">Анаконда
-            <input type="checkbox" value="value1">Человек
-            <input type="checkbox" value="value1">Слон
-            <input type="checkbox" value="value1">Антилопа
-            <input type="checkbox" value="value1">Голубь
-            <input type="checkbox" value="value1">Краб
-        </label>
+
+        <div class="b-center container">
+            <button type="submit">Отправить информацию</button>
+        </div>
     </form>
 </body>
 </html>

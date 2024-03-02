@@ -1,0 +1,51 @@
+h1 {
+    margin-bottom: 10px
+}
+
+select {
+    width: 50%
+}
+
+textarea {
+    width: 75%
+}
+
+button {
+    padding: 10px
+}
+
+.mb5 {
+    margin-bottom: 5px
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+
+.mt10 {
+    margin-top: 10px
+}
+
+.star {
+    color: red
+}
+
+.container {
+    width: 40%
+}
+
+.container-label {
+    width: 20%;
+    display: inline-block
+}
+
+.container-input {
+    width: 70%;
+    display: inline-block
+}
+
+.checkbox-container {
+    width: 20%;
+    display: inline-block;
+    margin: 10px;
+}
