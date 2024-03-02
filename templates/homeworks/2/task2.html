@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Task 2</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homeworks/2/task2.css') }}">
 </head>
 <body>
-
+    <form action="">
+        <div>
+            <label for="week">Неделя: </label>
+            <input type="week" id="week">
+        </div>
+        <div>
+            <label for="date_time">Дата и время: </label>
+            <input type="datetime-local" id="date_time">
+        </div>
+        <div>
+            <label for="month">Месяц: </label>
+            <input type="month" id="month">
+        </div>
+        <div>
+            <label for="time">Время: </label>
+            <input type="time" id="time">
+        </div>
+        <div>
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
 </body>
 </html>
