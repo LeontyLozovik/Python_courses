@@ -11,6 +11,7 @@ app = Flask(__name__,
 app.config['SECRET_KEY'] = 'lLHBlhbljhbl&fvgv5ghkcy67bhHV'
 app.config['UPLOAD_FOLDER'] = os.path.join(BASE_DIR, 'uploads')
 users = ['user1', 'user2', 'user3', 'user4']
+like_count = 0
 
 
 @app.route('/')
@@ -31,7 +32,6 @@ def favicon(mode):
         return redirect('/')
 
 
-
 @app.route('/users/')
 def vew_users():
     return render_template('second_users.html', users=users, head='', color='red')
@@ -48,6 +48,16 @@ def homeworks(hid):
 @app.route('/homeworks/<int:hid>/<string:template_name>')
 def homeworks_task(hid, template_name):
     return render_template(f'/homeworks/{hid}/{template_name}')
+
+
+@app.route('/like/', methods=['GET', 'POST'])
+def like():
+    global like_count
+    if request.method == 'GET':
+        return render_template('/homeworks/2/like.html', like_count=like_count)
+    elif request.method == 'POST':
+        like_count += 1
+        return redirect('/like/')
 
 
 @app.route('/form1/', methods=['GET', 'POST'])
