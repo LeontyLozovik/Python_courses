@@ -1,0 +1,50 @@
+header {
+    background: linear-gradient(to top, #9E8FCD, #F1C3E8);
+    border: 1px dashed black;
+}
+
+nav {
+    background: linear-gradient(to right, #DAF98A, #A4E3A7);
+    border: 1px dashed black;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+main {
+    background-color: #99E8CE;
+    border: 1px dashed black;
+    height: 400px;
+    flex-grow:1;
+}
+
+section {
+    background: linear-gradient(to right, #A9BFF6, #E68B8F);
+    border: 1px dashed black;
+    margin: 20px;
+}
+
+article {
+    background: linear-gradient(to right, #6DE486, #6CF4D7);
+    border: 1px dashed black;
+    margin: 20px;
+}
+
+aside {
+    background: linear-gradient(to right, #DBF889, #EC8986);
+    border: 1px dashed black;
+    width: 150px;
+}
+
+footer {
+    background: linear-gradient(to right, #F5887B, #C65E6D);
+    border: 1px dashed black;
+    height: 100px;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex
+}
