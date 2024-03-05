@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: #FBEEC1;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    left: -90px;
+    transition: 0.3s
+}
+
+nav:hover {
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px auto 10px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+ul > li:hover {
+    background-color: #BC986A;
+}
+
+ul > li:hover a{
+    color: white;
+}
