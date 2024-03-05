@@ -11,24 +11,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/homeworks/3/task3.css') }}">
 </head>
 <body>
-    <a href="#">Modal Window</a>
-    <div class="modal">
+    <a href="#openModal" class="no_decoration">Открыть модально окно</a>
+    <div id="openModal" class="modal">
         <div class="container">
-        <p>Заголовок модального окна</p>
-        <br>
-        <p>Содержимое модального окна</p>
-        <form action="">
-            <fieldset>
-                <legend>Forma 1</legend>
-                <input type="text"><br>
-                <input type="text"><br>
-                <input type="text"><br>
-                <input type="text"><br>
-                <input type="text"><br>
-                <button type="submit">Отправить</button>
-            </fieldset>
-        </form>
-    </div>
+            <div>
+                <a href="#close" class="close">x</a>
+            </div>
+            <p class="t-center header">Заголовок модального окна</p>
+            <br>
+            <p class="t-center">Содержимое модального окна</p>
+            <form action="#" class="form">
+                <fieldset class="t-center">
+                    <legend class="t-center">Form 1</legend>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <input type="text"><br>
+                    <button type="submit">Отправить</button>
+                </fieldset>
+            </form>
+        </div>
     </div>
 </body>
 </html>

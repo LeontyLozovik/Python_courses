@@ -1,6 +1,19 @@
+* {
+    margin: 0px;
+}
+
 a {
-    text-decoration: none;
     color: black;
+}
+
+input {
+    margin: 5px auto 5px auto;
+    width: 80%;
+}
+
+button {
+    margin: 5px auto 5px auto;
+    width: 82%;
 }
 
 .modal {
@@ -10,22 +23,40 @@ a {
     width: 100%;
     height: 100vh;
     z-index: 100;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(100, 79, 108, .7);
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
+    visibility: hidden;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
 }
 
 .container {
-    width: 25%;
-    background-color: white;
+    width: 35%;
+    background-color: #F9EBD9;
+    border-radius: 10px;
+}
+
+.header {
+    background-color: #FBE3C6;
+}
+
+.form {
     padding: 10px 10px 20px 10px;
 }
 
-.modal.open {
-    visibility: visible;
-    opacity: 1;
+.no_decoration {
+    text-decoration: none;
+}
+
+.close {
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
 }
