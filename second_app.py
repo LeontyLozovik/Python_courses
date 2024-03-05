@@ -16,10 +16,7 @@ like_count = 0
 
 @app.route('/')
 def index():
-    res = '<h4> ПОЛЬЗОВАТЕЛИ </h4>'
-    for user in users:
-        res += f'<p>Пользователь: {user}</p>'
-    return res
+    return render_template('homework.html')
 
 
 @app.route('/favicon.ico/<string:mode>')
@@ -40,7 +37,7 @@ def vew_users():
 @app.route('/homeworks/<int:hid>')
 def homeworks(hid):
     if hid == 1:
-        return render_template('homework_1.html')
+        return render_template('homework.html')
     else:
         return redirect('/')
 
